@@ -24,6 +24,10 @@
       box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1); /* Sötét árnyék a nem összecsukott gombokhoz */
     }
 
+    #teljes-szoveg {
+        display: none;
+    }
+
     </style>
 </head>
   <body>
@@ -111,6 +115,13 @@
                       <p>Ezek a módszerek és technikák közösen járulnak hozzá a biológiai rendszerek, különösen a fehérjemolekulák működésének mélyebb megértéséhez. A strukturális bioinformatika segítségével kutatók új terápiás célpontokat találhatnak, és fejleszthetnek új gyógyszereket, valamint hozzájárulhatnak a személyre szabott orvoslás fejlődéséhez is.</p>
                     </div>
                   </div>
+                  <div id="rovid-szoveg">
+                      <p>Ez itt a rövid szöveg. <a href="#" id="bovemebben-gomb">Bővebben</a></p><p id="teljes-szoveg">Ez itt a teljes szöveg, amit látni szeretnél, ha rákattintasz a "Bővebben" gombra.</p>
+                  </div>
+
+                      
+            
+                
             </div>
       </div>
       
@@ -172,5 +183,12 @@ if (savedTheme) {
 
 
     </script>
+<script>
+  document.getElementById("bovemebben-gomb").addEventListener("click", function(e) {
+      e.preventDefault(); // Megakadályozza a link alapértelmezett működését (pl. ugrás az href-be)
+      document.getElementById("teljes-szoveg").style.display = "block";
+      this.style.display = "none"; // Elrejti a gombot
+  });
+</script>
   </body>
 </html>
