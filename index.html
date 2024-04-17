@@ -28,6 +28,13 @@
         display: none;
     }
 
+    .carousel-item-blurred {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Állítsd a homályosság mértékét igény szerint */
+}
+
     </style>
 </head>
   <body>
@@ -71,7 +78,8 @@
                       <hr>
                       <h4>Az elmúlt évtizedekben a bioinformatika területe jelentős fejlődést mutatott, és számos új módszer és technika jelent meg a biológiai adatok elemzésére.</h4><br><p>Az egyik ilyen terület a strukturális bioinformatika, amely a biológiai makromolekulák, például fehérjék és nukleinsavak háromdimenziós szerkezetének elemzésével foglalkozik.</p>
 
-                        <p>A <b>strukturális bioinformatika</b> célja a biológiai makromolekulák szerkezetének megértése és az ezek közötti kapcsolatok feltárása. Ez az információ segíthet megérteni a molekulák működését, valamint a betegségek kialakulását és terápiáját. A strukturális bioinformatika módszerei közé tartozik a molekuláris modellezés, a szerkezet-alapú következtetés és az evolúciós analízis.</p>
+                      <p>Célja a biológiai makromolekulák szerkezetének megértése és az ezek közötti kapcsolatok feltárása. Ez az információ segíthet megérteni a molekulák működését, valamint a betegségek kialakulását és terápiáját. A strukturális bioinformatika módszerei közé tartozik a molekuláris modellezés, a szerkezet-alapú következtetés és az evolúciós analízis. <a href="#" id="bovemebben-gomb">Bővebben</a></p>
+                      <szoveg  id="teljes-szoveg"><p>A <b>strukturális bioinformatika</b> </p>
                         
                         <p>A molekuláris modellezés a biológiai makromolekulák háromdimenziós szerkezetének előrejelzését jelenti. Ez a módszer segít megérteni a molekulák működését és kölcsönhatásait más molekulákkal. A szerkezet-alapú következtetés lehetővé teszi a molekulák közötti hasonlóságok és különbségek azonosítását, ami segíthet a funkciók és kölcsönhatások feltárásában. Az evolúciós analízis pedig a molekulák evolúciós történetének feltárására szolgál, és segít megérteni a molekulák fejlődését és diverzitását.</p>
                         
@@ -87,7 +95,7 @@
                         <p>A természetben előforduló DNS láncok megfejtése tehát elsődleges fontosságú a (molekuláris) biológia számára. 2000-ben sikerült az ember genetikai kódját „megfejteni", vagyis szekvenálni először egy emberi DNS-t a Human Genom Programjának részeként. Az emberi DNS kb. 3 milliárd bázispárból áll (3 ⋅ 109). Egy ilyen hosszú láncban, egy molekulában, elvben kb. 5.6 Gigabájtnyi adat fér el. A DNS molekulák a természetben előforduló leghosszabb molekulák közé tartoznak. Az emberi DNS lánc megfejtése volt az első mérföldkő, az első nagy horderejű lépés, egy hosszúnak tűnő úton az ember vizsgálatával kapcsolatban. Ez olyan, mintha egy programnyelv szintaktikáját ismernénk, láthatjuk, milyen kódot „írt" a természet. Viszont a szemantika, hogy hol, mi, mit jelent, sokkal nehezebbnek tűnő feladat, amit nem biztos, hogy olyan gépies eszközökkel sikerül megfejteni, mint a szintaktikát... A DNS lánc megértése tehát a nagy kihívás, amiben vannak biztató kisebb, illetve nagyobb részeredmények.</p>
                         
                         <p>A természetben előforduló DNS molekulák vizsgálata viszont a DNS számítások szempontjából is fontos. A DNS számítások során előállítható mesterséges DNS láncok általában csak pár ezer bázis(pár) hosszig használhatóak. A természetben viszont több nagyságrenddel hosszabb DNS szálak is előfordulnak, sőt túlnyomó többségben ilyenek fordulnak elő. A természet titka a DNS molekulák térbeli struktúrájában van. Egy nagyságrendileg 109-1010 bázispárt tartalmazó molekulát nem egy hosszú spirálrugóként kell elképzelnünk, hiszen a hossza már méter nagyságrendű. Az élő sejtben, aminek mérete azért elég tág határok közt mozog, de legtöbb esetben 1-2 nagyságrenddel a milliméter mérete alatt van, el sem férne egy ilyen hosszú molekula, ha nem lenne megfelelően összehajtva. Ez az összehajtogatás, vagy csomagolás általában több lépcsőben hierarchikusan zajlik. A DNS molekula három dimenziós alakja pedig nagyon fontos az élő sejt szempontjából.</p>
-                        </p>
+                        </p></szoveg>
                       <p>A strukturális bioinformatika módszerei közé tartoznak a következők:</p>
                       <div class="col-6 accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -132,16 +140,44 @@
                       <p>Ezek a módszerek és technikák közösen járulnak hozzá a biológiai rendszerek, különösen a fehérjemolekulák működésének mélyebb megértéséhez. A strukturális bioinformatika segítségével kutatók új terápiás célpontokat találhatnak, és fejleszthetnek új gyógyszereket, valamint hozzájárulhatnak a személyre szabott orvoslás fejlődéséhez is.</p>
                     </div>
                   </div>
-                  <div id="rovid-szoveg">
-                      <p>Ez itt a rövid szöveg. <a href="#" id="bovemebben-gomb">Bővebben</a></p><p id="teljes-szoveg">Ez itt a teljes szöveg, amit látni szeretnél, ha rákattintasz a "Bővebben" gombra.</p>
-                  </div>
 
                       
             
                 
             </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 img-fluid">
+                            <img src="images/59_6266181a46a518.53678057.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 img-fluid">
+                            <img src="images/bioinfo.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 img-fluid">
+                            <img src="images/R.jpg" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        </div>
       </div>
-      
       
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -206,6 +242,16 @@ if (savedTheme) {
       document.getElementById("teljes-szoveg").style.display = "block";
       this.style.display = "none"; // Elrejti a gombot
   });
+
+
+  const blurredImage = 'path_to_blurred_image.jpg'; // Itt állítsd be a homályosított kép útvonalát
+
+const carouselItems = document.querySelectorAll('.carousel-item img');
+carouselItems.forEach(item => {
+    if (!item.getAttribute('src')) {
+        item.parentNode.style.backgroundImage = `url('${blurredImage}')`;
+    }
+});
 </script>
   </body>
 </html>
